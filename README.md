@@ -87,7 +87,7 @@ An web-based platform, [Teoreler](https://www.teoreler.com/mlpred/), has been de
 <img src="inference_utils_fu/images/teoreler_full.png" width="700">
 
 
-### :computer: **How to Use?**
+### :computer: **How to Use [Teoreler](https://www.teoreler.com/mlpred/)?**
 
 - For single SMILES:
 
