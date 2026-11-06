@@ -9,7 +9,7 @@
 1. [Web-based Platform](#web-based-platform)
 1. [References](#references)
 
-## Introduction
+## :book: Introduction
 The CG-GML (Constraint-Guided Graph Multitask Learning) framework is a molecular property prediction model developed to predict the plasma protein unbound fraction $(f_u)$ from molecular structures. Within this framework, the graph-based molecular representations is integrated with molecular descriptors to capture complementary structural and physicochemical information. Unlike conventional approaches, CG-GML incorporates descriptor-guided regularization term in the model loss function to capture relevant physicochemical relationships. These descriptor-guided constraints were formulated through data-driven approaches using the molecular descriptors exhibiting strongest statistical dependencies with $(f_u)$. During training, the model was allowed to adaptively optimize the contributions of different learning objectives. By combining multiple information related to $(f_u)$, CG-GML aims to improve the accuracy while maintaining the consistency between $(f_u)$ and other molecular properties.
 
 
