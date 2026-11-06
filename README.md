@@ -1,6 +1,6 @@
 # CG-GML: A Data-Driven Constrained Guided Graph-based Multitask Learning Framework for Fraction Unbound Prediction
 
-## Table of Content
+## :bookmark_tabs: Table of Content
 1. [Introduction](#introduction)
 1. [Data Collection](#data-collection)
 1. [Requirements](#requirements)
@@ -13,7 +13,7 @@
 The CG-GML (Constraint-Guided Graph Multitask Learning) framework is a molecular property prediction model developed to predict the plasma protein unbound fraction $(f_u)$ from molecular structures. Within this framework, the graph-based molecular representations is integrated with molecular descriptors to capture complementary structural and physicochemical information. Unlike conventional approaches, CG-GML incorporates descriptor-guided regularization term in the model loss function to capture relevant physicochemical relationships. These descriptor-guided constraints were formulated through data-driven approaches using the molecular descriptors exhibiting strongest statistical dependencies with $(f_u)$. During training, the model was allowed to adaptively optimize the contributions of different learning objectives. By combining multiple information related to $(f_u)$, CG-GML aims to improve the accuracy while maintaining the consistency between $(f_u)$ and other molecular properties.
 
 
-## Data Collection
+## :dna: Data Collection
 
 Eight publicly available datasets were merged, and systematically filtered following the methods described in the `Dataset preparation and Graph construction` section in the main manuscript to construct the final dataset of 8121 chemical compounds. The data sources are summarised as follows:
 
@@ -28,7 +28,7 @@ Eight publicly available datasets were merged, and systematically filtered follo
 | Krumpholz  et al. (2024)| 1327 | [link](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/database/2024/10.1093_database_baae063/2/baae063_supp.zip?Expires=1796504454&Signature=p4JyF7Z5-fSL9~w2nDpqYBcdDoHTQQ7Zh2O1OIYbBisNtAPuWVuogx1z-qiiG9Sow~lD8AiIqWLsYCKyQ5W0TBhqIo0gZRH2W9s1DtLM7oXH9V5u4AmPqaCMyN3XMa2Rsc53hTZMJy~bs9DZS4GXyiQbWBY2CMKU6V5dU7WEAYnLcu5M8DUr9AZE7CZJJ6eEr87XNCTTWEYUz11IybVE7QuYNOUISgfi9Te49v2uv5~lertpADs5RtCsRf7KQDh3Jxnfk60HlmVAz6JxtRYrUG91zyyHwfAjUnVzz7p5d9BmYX7r6uiphZvebZ5XBFg8WyTe4P67-lnj63L02aObAA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA) |
 | Jia et al. (2025)| 5620 | [link](https://pubs.acs.org/jmcmar/article-supplement/3669730/xlsx/jm5c00340_si_001/) |
 
-## Requirements
+## 	:gear: Requirements
 
 The following packages are required for the reproduciblity of the published code.
 
@@ -44,7 +44,7 @@ The following packages are required for the reproduciblity of the published code
 | Transformers | 4.57.1 | Xgboost | 3.0.2 |
 
 
-## Repository Outline
+## :open_file_folder: Repository Outline
 
 The repository is outlined as follows:
 
@@ -56,7 +56,7 @@ The repository is outlined as follows:
 | prediction.ipynb | Example uses |
 
 
-## Usages
+## :rocket: Usages
 
 Please follow the steps one by one to predict the **Fraction Unbound** values of any chemical compound.
 
@@ -80,13 +80,13 @@ Please follow the steps one by one to predict the **Fraction Unbound** values of
         y_pred = Predict_FU(smiles_list)
     ```
 
-## Web-based Platform
+## :globe_with_meridians: Web-based Platform
 
 An web-based platform, [Teoreler](https://www.teoreler.com/mlpred/), has been developed and made freely available for molecular property prediction.
 
 <img src="inference_utils_fu/images/teoreler_full.png" width="700">
 
-## References
+## :scroll: Citation
 
 Use the following format to cite this work.
 
