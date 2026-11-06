@@ -50,16 +50,17 @@ The repository is outlined as follows:
 
 | Folder/File | Details |
 |---|---|
-| inference_utils_cltot | Folder for all the utility files used in model prediction |
-| inference_cltot.py | Main inference file including the model loading, data preparation, and model inferences |
+| inference_utils_fu | Folder for all the utility files used in model prediction |
+| metadata | Folder for auxiliary information, including, node features in molecular graph, atomic descriptors collected from Webelements, etc.  |
+| inference_fu.py | Main inference file, including, the model loading, data preparation, and model inferences |
 | prediction.ipynb | Example uses |
 
 
 ## Usages
 
-Please follow the steps one by one to predict the **Total Clearance** values of any chemical compound.
+Please follow the steps one by one to predict the **Fraction Unbound** values of any chemical compound.
 
-1. Download [`Best_models_Cltot.zip`](https://www.teoreler.com/) file containing the pretrained models and associated metadata from [Teoreler](https://www.teoreler.com/).
+1. Download [`best_models_fu.zip`](https://www.teoreler.com/) file containing the pretrained models from [Teoreler](https://www.teoreler.com/).
 
 1. Place the downloaded ZIP file in this and extract its contents there.
 
@@ -68,30 +69,22 @@ Please follow the steps one by one to predict the **Total Clearance** values of 
     -  **For both single or multiple SMILES:**
 
     ```python
-        from inference_cltot import predict_cltot
-
-        y_pred = predict_cltot(smiles)
-    ```
-
-1. **Example**
-
-    ```python
-        from inference_cltot import predict_cltot
+        from inference_fu import Predict_FU
 
         # Single SMILES
         smiles = 'CCO'
-        y_pred = predict_cltot(smiles)
+        y_pred = Predict_FU(smiles=smiles)
 
         # Multiple SMILES
         smiles_list = ['CCO', 'CCN', 'CC(=O)O']
-        y_pred = predict_cltot(smiles_list)
+        y_pred = Predict_FU(smiles_list)
     ```
 
 ## Web-based Platform
 
 An web-based platform, [Teoreler](https://www.teoreler.com/mlpred/), has been developed and made freely available for molecular property prediction.
 
-<img src="inference_utils_cltot/images/teoreler_full.png" width="700">
+<img src="inference_utils_fu/images/teoreler_full.png" width="700">
 
 ## References
 
@@ -99,8 +92,8 @@ Use the following format to cite this work.
 
 ```bibtex
 
-@article{mondal2026foenet,
-  title={A Fusion of Expert network for Machine Learning-Based Total Clearance Prediction of Chemical Compounds},
+@article{mondal2026cggml,
+  title={CG-GML: A Data-Driven Constrained Guided Graph-based Multitask Learning Framework for Fraction Unbound Prediction},
   author={Rajdeep Mondal, Rajith Rajoli, Andrew Owen, and Soumitra Samanta},
   year={2026},
   url={https://www.teoreler.com/mlpred/}
